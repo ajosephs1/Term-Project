@@ -1,0 +1,29 @@
+.heading {
+  margin: auto;
+  align-items: center;
+}
+.navbar {
+  margin: auto;
+  align-items: center;
+  border: 1pt solid black;
+  padding: 0 60px;
+  display: inline-flexbox;
+}
+ul {
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 5px 6px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  text-decoration-line: none;
+}
+li {
+  align-items: center;
+  display: inline;
+  text-decoration: overline;
+  padding: 4px 10px 4px;
+  
+}

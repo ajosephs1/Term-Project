@@ -1,0 +1,20 @@
+img {
+  max-width: 300px;
+}
+table {
+  position: absolute ;
+  margin-left:12%;
+  margin-right: auto;
+}
+td {
+  padding: 5px;
+  border: tomato solid groove;
+}
+h1 {
+  text-align: center;
+  margin: 8em auto 2em;
+}
+p {
+  text-align: center;
+  margin: 3em 15em;
+}

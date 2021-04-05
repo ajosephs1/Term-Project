@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles/navbar.css">
+</head>
+
+<body>
+  <div class="heading">
+    <header>BarterUni</header>
+</div>
+    <nav>
+        <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="auction.html">Auction House</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="userfeedback.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </div>
+        </ul>
+    </nav>
+    <main>
+    <h1>Customer Feedback</h1>
+    <form method="GET" action="">
+      <fieldset>
+        <legend>Your Information:</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name here"
+          />
+        </div>
+        <div>
+          <label for="email"
+            >Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email here"
+            />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Your Review:</legend>
+        
+        <div>
+          How was your experience on the website?
+          <br />
+          <label>
+            Poor
+            <input type="radio" id="poor" name="rating" value="Poor" />
+          </label>
+          <label>
+            Neutral
+            <input type="radio" id="neutral" name="rating" value="Neutral" />
+          </label>
+          <label>
+            Great
+            <input type="radio" id="great" name="rating" value="Great" />
+          </label>
+        </div>
+        <div>
+          <label for="comments"
+            >Please let me know what improvements you would like to see:
+            <br />
+            <textarea
+              name="comments"
+              id="comments"
+              cols="55"
+              rows="7"
+            ></textarea>
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" id="signup" name="signup" checked />
+          <label for="checkbox">Sign me up for email updates</label>
+        </div>
+        <div>
+          <input type="submit" value="Submit" name="submit" />
+          <input type="reset" value="Reset" name="reset" />
+        </div>
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    
+</main>
+  </body>
+  </html>
