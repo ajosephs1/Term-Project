@@ -1,10 +1,12 @@
+
 img {
-  max-width: 300px;
+  width: 250px;
 }
 table {
   position: absolute ;
-  margin-left:12%;
+  margin-left:20%;
   margin-right: auto;
+
 }
 td {
   padding: 5px;
@@ -12,9 +14,23 @@ td {
 }
 h1 {
   text-align: center;
-  margin: 8em auto 2em;
+  margin: 3em auto 2em;
+}
+h2 {
+  text-align: center;
+  margin: 2em auto 2em;
 }
 p {
   text-align: center;
   margin: 3em 15em;
+}
+body {
+  background-image:url("/images/paisley.jpg");
+
+}
+.main {
+  max-width: 2803px; 
+}
+form{
+  align-items: center;
 }

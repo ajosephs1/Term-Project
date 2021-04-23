@@ -1,13 +1,17 @@
 .heading {
-  margin: auto;
-  align-items: center;
+  margin-left: 35%;
+  padding: 0;
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-size: 5pc;
+
 }
 .navbar {
-  margin: auto;
+  margin-left: 200px;
+  margin-right: 200px;
   align-items: center;
   border: 1pt solid black;
   padding: 0 60px;
-  display: inline-flexbox;
+  display:inline-flexbox;
 }
 ul {
   align-items: center;
@@ -21,6 +25,7 @@ ul {
   text-decoration-line: none;
 }
 li {
+  font-family: 'IM Fell DW Pica SC', serif;
   align-items: center;
   display: inline;
   text-decoration: overline;

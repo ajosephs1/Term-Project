@@ -9,7 +9,93 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Codystar&family=IM+Fell+DW+Pica+SC&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/main.css" >
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+     margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#text {
+    width: 100px;
+    height: 30px;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
 </head>
 <body>
     <div class="heading">
@@ -20,14 +106,261 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="list.html">List</a></li>
-                <li><a href="auction.html">Auction House</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
                 <li><a href="userfeedback.html">Contact</a></li>
                 <li><a href="profile.html">Profile</a></li>
-            </div>
             </ul>
+        </div>
         </nav>
         <main>
+            <table>
+                <tr>
+                    <td>
+                        <img src="/images/igormode.jpg" alt="profile photo igormode">
+                    </td>
+                    <td>
+                        <p>Hi i'm Igor Mode you may recognize  be by my last name, yes my mother is the world renound fashion designer Edna Mode. I have a few clothes for sale/ for barter so please take a look and let me know what you like. You will feel bold and heroic in these clothes, no capes! </p>
+                    </td>
+                    <td>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 6</div>
+                              <img src="/images/allsaints.jpg" style="width:100%">
+                              <div class="text">Grey Sweatshirt</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 6</div>
+                              <img src="/images/beigecos1.jpg" style="width:100%">
+                              <div class="text">Beige COS Pants</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 6</div>
+                              <img src="/images/bluejumper.jpg" style="width:100%">
+                              <div class="text">Allsaints Knitted Sweater</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="/images/greencos.jpg" style="width:100%">
+                                <div class="text">Green COS Pants</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="/images/chevignon.jpg" style="width:100%">
+                                <div class="text">Chevignon Shirt</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="/images/apc.jpg" style="width:100%">
+                                <div class="text">APC Sailor shirt</div>
+                              </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+
+                    </td>
+                    <td>
+                        <form action="">
+                            <input type="text" placeholder="Price / Item" id="text"></input>
+                            <button type="submit">offer</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/images/vann.jpg" alt="profile photo vann">
+                    </td>
+                    <td>
+                        <p>
+                            Hey there! I'm Vann a busy father of four little gremlins who drive me crazy but I wouldn't change for the world. I have a few home item as well as clothes for sale or trade if you have any good offers. I'm looking for a new pair of comfy jeans and an ab roller p.s. my seven year anniversary is coming up.
+                        </p>
+                    </td>
+                    <td>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 9</div>
+                              <img src="/images/ekettle.jpeg" style="width:100%">
+                              <div class="text">Electric Kettle</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 9</div>
+                              <img src="/images/led1.jpeg" style="width:100%">
+                              <div class="text">LED Wall light</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 9</div>
+                              <img src="/images/helmet.jpg" style="width:100%">
+                              <div class="text">Helmet</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 9</div>
+                                <img src="/images/helmet.jpg" style="width:100%">
+                                <div class="text">Helmet</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">4 / 9</div>
+                                <img src="/images/sofa-chair.jpeg" style="width:100%">
+                                <div class="text">IKEA sofa-chair</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">5 / 9</div>
+                                <img src="/images/lamp.jpeg" style="width:100%">
+                                <div class="text">Standing Lamp</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">6 / 9</div>
+                                <img src="/images/dresser.jpeg" style="width:100%">
+                                <div class="text">Dresser</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">7 / 9</div>
+                                <img src="/images/luckybrand.jpg" style="width:100%">
+                                <div class="text">Blue Jeans</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">8 / 9</div>
+                                <img src="/images/mugs.jpeg" style="width:100%">
+                                <div class="text">Mugs</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">9 / 9</div>
+                                <img src="/images/pillows.jpeg" style="width:100%">
+                                <div class="text">Pillows</div>
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">3 / 9</div>
+                                <img src="/images/helmet.jpg" style="width:100%">
+                                <div class="text">Helmet</div>
+                              </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+                    </td>
+                    <td>
+                        <form action="">
+                            <input type="text" placeholder="Price / Item" id="text"></input>
+                            <button type="submit">offer</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/images/baviddowie.jpg" alt="profile photo baviddowie">
+                    </td>
+                    <td>
+                        <p>
+                            Hello human. I'm Bavid Dowie. Some would like to call me an artist but you can't put me in a box. I'm a superhuman and here are my items that may help you feel like one. Send me your best offer. 
+                        </p>
+                    </td>
+                    <td>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 7</div>
+                              <img src="/images/a&f.jpg" style="width:100%">
+                              <div class="text">Black Jeans</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 7</div>
+                              <img src="/images/zara.jpg" style="width:100%">
+                              <div class="text">Cropped Jeans</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 7</div>
+                              <img src="/images/ps4.jpeg" style="width:100%">
+                              <div class="text">PS4</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 7</div>
+                                <img src="/images/buckethat.jpg" style="width:100%">
+                                <div class="text">Faux Fur Hat</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">5 / 7</div>
+                                <img src="/images/ukulele.jpeg" style="width:100%">
+                                <div class="text">Kala Ukulele</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">6 / 7</div>
+                                <img src="/images/keyboard.jpeg" style="width:100%">
+                                <div class="text">Yamaha keyboard</div>
+                              </div>
+
+                              
+                              <div class="mySlides fade">
+                                <div class="numbertext">7 / 7</div>
+                                <img src="/images/nespresso1.jpeg" style="width:100%">
+                                <div class="text">Nespresso Insignia</div>
+                              </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+                    </td>
+                    <td>
+                        <form action="">
+                        <input type="text" placeholder="Price / Item"></input>
+                        <button type="submit">offer</button id="text">
+                    </form>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            function chBackcolor() {
+              document.querySelector("img").style.borderColor = "red";
+            }
+            document.querySelector("img").onmouseover = chBackcolor;
+            </script>
+            
 </body>
 </html>
