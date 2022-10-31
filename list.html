@@ -29,6 +29,7 @@
     />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <style>
       form {
           border: 2pt black;
@@ -60,19 +61,19 @@
       <h1>Have something to offer?</h1>
       <h2>List here</h2>
       <form action="/action_page.php" method="POST">
-        <div>
+        <div class="sec">
           <label for="name">Your Name</label>
           <input type="text" name="name" id="name" />
         </div>
-        <div>
+        <div class="sec">
           <label for="item">Item Name</label>
           <input type="text" name="item" id="item" required/>
         </div>
-        <div>
+        <div class="sec">
           <label for="description">Item description</label>
           <textarea name="description" id="description" required></textarea>
         </div>
-        <div>
+        <div class="sec">
           <input type="file" id="myFile" name="filename" />
           <input type="submit" />
         </div>
